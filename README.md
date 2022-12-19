@@ -1,3 +1,4 @@
+[![Board Status](https://dev.azure.com/frarinaldi/5ba6aa2f-dc9d-4c64-a508-34565e3c9f36/92779fd2-f59f-423b-a60e-ecc066463aca/_apis/work/boardbadge/a97031be-d5d5-49e1-8c47-16dc48ba4e8c)](https://dev.azure.com/frarinaldi/5ba6aa2f-dc9d-4c64-a508-34565e3c9f36/_boards/board/t/92779fd2-f59f-423b-a60e-ecc066463aca/Microsoft.RequirementCategory)
 # This project is retired, archived, and no longer supported. You are welcome to continue to use and fork the repository.
 
 [![Build Status](https://dev.azure.com/frarinaldi/BetterTogether/_apis/build/status/frarin.ContosoAir?branchName=master)](https://dev.azure.com/frarinaldi/BetterTogether/_build/latest?definitionId=2&branchName=master)
