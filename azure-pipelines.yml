@@ -4,22 +4,27 @@ pool:
    trigger:
     - master
 steps:
+    # Here the deployment templates are copied to a target
+    # folder for use during the release process
     - task: CopyFiles@2
       displayName: 'Copy Files to: $(build.artifactstagingdirectory)/Templates'
       inputs:
         SourceFolder: deployment
         Contents: '*.json'
         TargetFolder: '$(build.artifactstagingdirectory)/Templates'
+    # Here the project is built with NPM
     - task: Npm@1
       displayName: 'npm custom'
       inputs:
         command: custom
         verbose: false
         customCommand: 'install --production'
+    # Here the built solution is archived
     - task: ArchiveFiles@2
       displayName: 'Archive $(Build.SourcesDirectory)'
       inputs:
         rootFolderOrFile: '$(Build.SourcesDirectory)'
         includeRootFolder: false
+    # and here is published for the release pipeline to access
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Artifact: drop'
